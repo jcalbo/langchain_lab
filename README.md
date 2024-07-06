@@ -8,3 +8,8 @@ to install  ```langchain-openai``` and then import ChatOpenAI
 from langchain_openai import ChatOpenAI
 ```
 
+Also, I've updated the method to invoke the chain which changed to:
+
+```python
+    chain = summary_prompt_template | llm
+```
